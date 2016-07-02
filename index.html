@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    div, p {
+      margin: 0px;
+      padding: 0px;
+    }
+    .boundary {
+      position: relative;
+      overflow: hidden;
+    }
+    .image {
+      position: absolute;
+    }
+    .viewport {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 100px;
+      cursor: move;
+      box-shadow: 0 0 0 899px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <p>
+    <input type="file" id="selectImage" accept="image/*">
+  </p>
+  <div class="boundary">
+    <p class="image">
+      <img id="selectedImage" >
+    </p>
+    <p class="viewport"></p>
+  </div>
+</body>
+</html>
